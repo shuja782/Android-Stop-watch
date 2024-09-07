@@ -1,0 +1,180 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <FrameLayout
+        android:id="@+id/circular_layout_container"
+        android:layout_width="320dp"
+        android:layout_height="320dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginBottom="10dp"
+        android:layout_centerHorizontal="true">
+
+    <FrameLayout
+        android:id="@+id/circular_layout"
+        android:layout_width="300dp"
+        android:layout_height="300dp"
+        android:layout_gravity="center"
+        android:background="@drawable/circle">
+
+        <TextView
+            android:id="@+id/timer_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/_00_00_00"
+            android:textColor="@color/white"
+            android:textSize="36sp"
+            android:textStyle="bold"/>
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <View
+            android:layout_width="300dp"
+            android:layout_height="300dp"
+            android:layout_gravity="center"
+            android:background="@drawable/circle_border"/>
+    </FrameLayout>
+</FrameLayout>
+
+
+
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/restart_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/circular_layout_container"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/reload"
+        style="@style/AppFabStyle"
+        android:elevation="10dp"
+        android:contentDescription="@string/restart_button_description"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/play_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/circular_layout_container"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/play"
+        style="@style/AppFabStyle"
+        android:elevation="10dp"
+        android:contentDescription="@string/play_button_description"/>
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/stop_button"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_below="@id/circular_layout_container"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="60dp"
+        android:layout_marginTop="30dp"
+        android:src="@drawable/stop"
+        style="@style/AppFabStyle"
+        android:elevation="10dp"
+        android:contentDescription="@string/stop_button_description"/>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lap_time_container_outer"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/play_button"
+        android:layout_marginTop="50dp"
+        app:cardBackgroundColor="@color/fab_color"
+        app:cardCornerRadius="40dp">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/lap_time_container_inner"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="8dp"
+        app:cardCornerRadius="40dp"
+        app:cardBackgroundColor="@color/background">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <TextView
+                android:id="@+id/lap_time_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_1_00_00_000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="24dp"/>
+
+            <TextView
+                android:id="@+id/lap_time_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_2_00_00_000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/lap_time_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_3_00_00_000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/lap_time_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_4_00_00_000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/lap_time_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_5_00_00_000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"/>
+
+            <TextView
+                android:id="@+id/lap_time_6"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/lap_6_00_00_000"
+                android:textColor="@color/white"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:paddingTop="16dp"/>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+    </androidx.cardview.widget.CardView>
+
+
+
+</RelativeLayout>

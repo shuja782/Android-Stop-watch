@@ -1,0 +1,15 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <style name="Base.Theme.TimerWatch" parent="Theme.Material3.Light.NoActionBar">
+        <item name="android:windowFullscreen">true</item>
+        <item name="android:windowBackground">@color/background</item>
+    </style>
+
+    <style name="AppFabStyle" parent="Widget.MaterialComponents.FloatingActionButton">
+        <item name="backgroundTint">@color/fab_color</item>
+        <item name="rippleColor">@color/fab_ripple_color</item>
+        <item name="fabSize">normal</item>
+    </style>
+
+
+    <style name="Theme.TimerWatch" parent="Base.Theme.TimerWatch" />
+</resources>

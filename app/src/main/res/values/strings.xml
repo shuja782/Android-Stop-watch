@@ -1,0 +1,16 @@
+<resources>
+    <string name="app_name">Timer Watch</string>
+    <string name="play_button_description">Start Timer</string>
+    <string name="stop_button_description">Stop Timer</string>
+    <string name="restart_button_description">Restart timer</string>
+    <string name="_00_00_00">00:00:000</string>
+    <string name="lap_1_00_00_000">Lap 1 :00:00:000</string>
+    <string name="lap_2_00_00_000">Lap 2 :00:00:000</string>
+    <string name="lap_3_00_00_000">Lap 3 :00:00:000</string>
+    <string name="lap_4_00_00_000">Lap 4 :00:00:000</string>
+    <string name="lap_5_00_00_000">Lap 5 :00:00:000</string>
+    <string name="lap_6_00_00_000">Lap 6 :00:00:000</string>
+    <string name="lap_time_default">00:00:000</string>
+    <string name="lap_prefix">Lap %d : </string>
+
+</resources>
